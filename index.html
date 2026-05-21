@@ -1,0 +1,1000 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NOVA TECH CAREERS — 制作企画書 ／ Portfolio Proposal</title>
+<meta name="description" content="NOVA TECH CAREERS 採用LPの制作企画書。設計意図・実装ポイント・技術構成・WordPress化想定までを記載したポートフォリオ提出用資料。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+JP:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       P.01 — COVER
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">01</span>
+    <div class="page__body cover">
+      <div class="cover__left">
+        <span class="cover__eyebrow">PORTFOLIO PROPOSAL · 2026</span>
+
+        <h1 class="cover__brand">NOVA TECH</h1>
+        <p class="cover__brand-sub">C A R E E R S</p>
+
+        <p class="cover__catch">
+          テクノロジーで、<br>
+          <span>次の時代をつくる。</span>
+        </p>
+
+        <p class="cover__lead">
+          本書は、 採用 LP 「NOVA TECH CAREERS」 の設計意図と実装プロセスをまとめた制作企画書です。
+          「ただ綺麗なサイトを作る」 のではなく、 採用課題を解決する LP として何ができるかを起点に、
+          設計 → デザイン → 実装 → 公開までを通して取り組んだ過程を記録しています。
+        </p>
+
+        <dl class="cover__meta">
+          <dt>Project</dt><dd>NOVA TECH CAREERS — 採用 LP 制作</dd>
+          <dt>Document</dt><dd>Design / Development Proposal</dd>
+          <dt>Submission</dt><dd>For Portfolio Review</dd>
+        </dl>
+      </div>
+
+      <div class="cover__visual">
+        <img src="./assets/images/ogp.jpg" alt="NOVA TECH CAREERS — テクノロジーで、次の時代をつくる。 採用 LP の OGP ビジュアル。">
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">COVER</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.02 — INDEX
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">02</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">INDEX</p>
+        <h2 class="head__title">目次</h2>
+        <p class="head__sub">— Contents · 全 11 セクション —</p>
+      </header>
+
+      <div class="toc">
+        <div>
+          <div class="toc-section">
+            <span class="toc-section__num">I</span>
+            <span class="toc-section__name">Strategy · 戦略</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">01</span>
+            <div>
+              <p class="toc-item__title-en">Project Overview</p>
+              <p class="toc-item__title-jp">プロジェクト概要</p>
+            </div>
+            <span class="toc-item__page">P.03</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">02</span>
+            <div>
+              <p class="toc-item__title-en">Site Structure &amp; UI/UX</p>
+              <p class="toc-item__title-jp">サイト設計 ／ UI ・ UX</p>
+            </div>
+            <span class="toc-item__page">P.04</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">03</span>
+            <div>
+              <p class="toc-item__title-en">First View &amp; CTA Strategy</p>
+              <p class="toc-item__title-jp">ファーストビュー ／ CTA 設計</p>
+            </div>
+            <span class="toc-item__page">P.05</span>
+          </div>
+
+          <div class="toc-section">
+            <span class="toc-section__num">II</span>
+            <span class="toc-section__name">Design &amp; Build · 制作</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">04</span>
+            <div>
+              <p class="toc-item__title-en">Design Concept</p>
+              <p class="toc-item__title-jp">デザインコンセプト</p>
+            </div>
+            <span class="toc-item__page">P.06</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">05</span>
+            <div>
+              <p class="toc-item__title-en">Tech Stack &amp; Environment</p>
+              <p class="toc-item__title-jp">技術構成 ／ 開発環境</p>
+            </div>
+            <span class="toc-item__page">P.07</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">06</span>
+            <div>
+              <p class="toc-item__title-en">Implementation Highlights</p>
+              <p class="toc-item__title-jp">実装ポイント</p>
+            </div>
+            <span class="toc-item__page">P.08</span>
+          </div>
+        </div>
+
+        <div>
+          <div class="toc-section">
+            <span class="toc-section__num">III</span>
+            <span class="toc-section__name">Result · 成果</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">07</span>
+            <div>
+              <p class="toc-item__title-en">Web Marketing Perspective</p>
+              <p class="toc-item__title-jp">Web マーケティング視点</p>
+            </div>
+            <span class="toc-item__page">P.09</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">08</span>
+            <div>
+              <p class="toc-item__title-en">WordPress Migration Plan</p>
+              <p class="toc-item__title-jp">WordPress 化想定</p>
+            </div>
+            <span class="toc-item__page">P.10</span>
+          </div>
+
+          <div class="toc-section">
+            <span class="toc-section__num">IV</span>
+            <span class="toc-section__name">Reflection · 振り返り</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">09</span>
+            <div>
+              <p class="toc-item__title-en">Challenges</p>
+              <p class="toc-item__title-jp">苦労した点</p>
+            </div>
+            <span class="toc-item__page">P.11</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">10</span>
+            <div>
+              <p class="toc-item__title-en">Learnings</p>
+              <p class="toc-item__title-jp">学んだこと</p>
+            </div>
+            <span class="toc-item__page">P.12</span>
+          </div>
+          <div class="toc-item">
+            <span class="toc-item__num">11</span>
+            <div>
+              <p class="toc-item__title-en">Public Resources &amp; Closing</p>
+              <p class="toc-item__title-jp">公開リソース ／ Closing</p>
+            </div>
+            <span class="toc-item__page">P.13</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">INDEX</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.03 — PROJECT OVERVIEW
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">03</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">01 — Project Overview</p>
+        <h2 class="head__title">プロジェクト概要 ／ <em>採用課題を解決する LP</em></h2>
+        <p class="head__sub">— What this site is built to achieve —</p>
+      </header>
+
+      <p class="lead">
+        近未来系 IT 企業を想定した <em>架空企業の採用 LP</em> を、 ゼロから企画 ・ 設計 ・ 実装 ・ 公開まで担当しました。
+        ポートフォリオ作品としてだけでなく、 「採用 LP として実務を意識した構成」 をゴールに据えて制作しています。
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">PURPOSE</p>
+          <h3 class="card__title">制作目的</h3>
+          <p class="card__body">
+            「ただ綺麗な採用サイト」 ではなく、 <strong>応募数 ・ 応募者の質 ・ エントリー完了率</strong> を改善する LP として設計。
+            ファーストビューでの訴求 → 不安解消 → エントリーまでの動線を 1 枚で完結させる構造を組み立てました。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">TARGET</p>
+          <h3 class="card__title">想定ターゲット</h3>
+          <p class="card__body">
+            20 代後半 〜 30 代前半の <strong>エンジニア ／ デザイナー</strong>。
+            「裁量のある環境 ・ リモート ・ 成長機会」 を重視し、 移動中にスマートフォンで採用情報を比較する層を中心に想定しています。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">ISSUE</p>
+          <h3 class="card__title">採用 LP の典型課題</h3>
+          <p class="card__body">
+            ① ファーストビュー 3 秒以内の離脱<br>
+            ② 「合うか／働けるか」 の不安が解消されないまま閉じられる<br>
+            ③ スマホ操作性が悪く、 移動中のエントリーが完結しない<br>
+            ④ そもそも検索 ・ ローカル流入に乗らない
+          </p>
+        </div>
+
+        <div class="card card--soft">
+          <p class="card__num">APPROACH</p>
+          <h3 class="card__title">解決アプローチ</h3>
+          <p class="card__body">
+            <em>「世界観 → 価値 → 条件 → 行動」</em> の 4 段で構成。
+            ヒーローで価値訴求、 Culture ／ Interview で不安を解消、 Recruit ／ FAQ で具体条件を提示、 Contact で行動に繋げる
+            <strong>縦動線設計</strong> を採用しました。
+          </p>
+        </div>
+      </div>
+
+      <p class="quote">
+        <strong>制作スタンス</strong> ：
+        本案件は架空企業ですが、 <em>実案件を想定した姿勢</em> で設計することを意識しました。
+        ヒアリングシート ・ ペルソナ ・ KPI 目標 ・ サイトマップを順に作成し、 デザインに入る前に
+        <em>「何を解決するためのサイトか」</em> を言語化してからコードに進む手順を取っています。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">I · STRATEGY</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.04 — SITE STRUCTURE & UI/UX
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">04</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">02 — Site Structure &amp; UI/UX</p>
+        <h2 class="head__title">サイト設計 ／ <em>1 スクロールで完結する縦動線</em></h2>
+        <p class="head__sub">— Information architecture &amp; user flow —</p>
+      </header>
+
+      <p class="lead">
+        採用 LP のユーザーは 「移動中スマホで複数社を比較する」 のが典型行動。
+        下層ページを増やすほど離脱ポイントが増えるため、 <em>トップ 1 枚で全要素に触れる</em> 構造を採用しました。
+      </p>
+
+      <h3 class="sub">縦スクロールでの心理動線</h3>
+      <div class="grid-4">
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Hero · 世界観</h4>
+            <p>「何の会社か」 を 3 秒で伝える。 数値指標 4 つで判断材料を即提示。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>About / Service · 価値</h4>
+            <p>Mission ・ Vision ・ Value と 4 サービス領域で 「自社の格」 を提示。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Culture / Work Style · 接続</h4>
+            <p>「自分が働けるか」 の不安を、 文化 ・ 制度 ・ ツールスタックで解消。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Interview · 共感</h4>
+            <p>架空メンバーの声を 3 枚配置。 「自分と近い人がいる」 を作る装置。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Recruit · 条件</h4>
+            <p>4 ポジションを <code>&lt;details&gt;</code> で折り畳み。 必要時のみ展開できる UI。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Design Intent · 設計意図</h4>
+            <p>採用担当者向けに 「成果視点で組んだ理由」 を明示。 ポートフォリオ用補強。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>FAQ · 不安解消</h4>
+            <p>未経験応募 ・ 選考フロー ・ リモートなど、 直前の懸念を先回りで解消。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Contact · 行動</h4>
+            <p>応募 ／ カジュアル面談 ／ お問い合わせ の <em>3 種の温度感</em> を用意。</p>
+          </div>
+        </div>
+      </div>
+
+      <h3 class="sub">UI / UX で意識したこと</h3>
+      <p class="quote">
+        <strong>① 迷わせない／迷っても戻れる</strong> — ヘッダーに 「トップへ戻る」 「予約へ進む」 を常駐。
+        <strong>② フォームの心理的負荷を最小化</strong> — テキスト入力を減らし、 タップで選べる UI に。
+        <strong>③ アクセシビリティを 「品位」 として扱う</strong> — セマンティック HTML ・ ARIA ・ フォーカスリングを丁寧に。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">I · STRATEGY</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.05 — FIRST VIEW & CTA STRATEGY
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">05</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">03 — First View &amp; CTA Strategy</p>
+        <h2 class="head__title">ファーストビュー ／ <em>CTA の 3 階層配置</em></h2>
+        <p class="head__sub">— Designing for the first 3 seconds —</p>
+      </header>
+
+      <p class="lead">
+        採用 LP の離脱の大半は <em>ファーストビュー 3 秒以内</em> で発生します。
+        「何の会社か」 「自分に関係があるか」 「次に何をすればいいか」 を、 視線が止まる前に提示する設計にしました。
+      </p>
+
+      <h3 class="sub">ファーストビューの三層構造</h3>
+      <div class="grid-3">
+        <div class="card">
+          <p class="card__num">LAYER 01</p>
+          <h3 class="card__title">事業内容</h3>
+          <p class="card__body">「テクノロジーで、 次の時代をつくる。」 の主見出しと、 Web 制作 ／ AI ／ DX を即提示。</p>
+        </div>
+        <div class="card">
+          <p class="card__num">LAYER 02</p>
+          <h3 class="card__title">募集中の事実</h3>
+          <p class="card__body"><code>NOW HIRING · 2026 SPRING</code> のパルスバッジで、 「今、 募集している」 を視覚化。</p>
+        </div>
+        <div class="card">
+          <p class="card__num">LAYER 03</p>
+          <h3 class="card__title">数値で語る指標</h3>
+          <p class="card__body">平均年齢 ・ リモート率 ・ プロジェクト数 ・ 技術スタック数を <strong>4 KPI</strong> として並置。</p>
+        </div>
+      </div>
+
+      <h3 class="sub">CTA の階層設計 (合計 11 箇所配置)</h3>
+      <div class="row-list">
+        <div class="row">
+          <span class="row__mark">◇</span>
+          <div>
+            <h4>PRIMARY · 金色塗りつぶしの主 CTA</h4>
+            <p>ヒーロー直下 ／ ヘッダー右上 ／ 各セクション末尾。 <em>最も目立つ位置に集中配置</em>。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◇</span>
+          <div>
+            <h4>SECONDARY · アウトライン CTA</h4>
+            <p>「私たちについて」 「カジュアル面談」 など、 第二の選択肢として配置。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◇</span>
+          <div>
+            <h4>STEALTH · テキストリンク</h4>
+            <p>フッター ／ ナビ。 「気づいた時だけ使う」 静かな位置に。</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="quote">
+        <strong>設計判断</strong> ：金ボタンの数を絞ることで 「ここを押せば応募できる」 を即理解できる状態を作る。
+        CTA を均一に増やすほど、 むしろ意思決定は鈍ります。
+        <em>「数」 ではなく 「階層」 を設計する</em> ことを意識しました。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">I · STRATEGY</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.06 — DESIGN CONCEPT
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">06</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">04 — Design Concept</p>
+        <h2 class="head__title">デザインコンセプト ／ <em>Apple × SaaS × Glass UI</em></h2>
+        <p class="head__sub">— Visual language system —</p>
+      </header>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">COLOR</p>
+          <h3 class="card__title">黒ベース × 青紫グラデーション</h3>
+          <p class="card__body">
+            背景は <code>#0a0b14</code> の漆黒。 アクセントは
+            <strong>#5b8def → #8b5cf6 → #c084fc</strong> の 3 色グラデーション。
+            黒の比重は 70 % 以上、 アクセントは 「ここを見せたい」 場所のみに限定。
+            「使う場所が限られているからこそ効く」 配色設計です。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">TYPOGRAPHY</p>
+          <h3 class="card__title">和洋ペアリング</h3>
+          <p class="card__body">
+            欧文見出しに <strong>Manrope</strong>、 本文に <strong>Noto Sans JP</strong>、
+            UI ・ コードに <strong>JetBrains Mono</strong>。
+            セリフ寄りの可読性と、 SaaS 系プロダクトに通じる端正さの両立を狙いました。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">GLASS UI</p>
+          <h3 class="card__title">Glassmorphism</h3>
+          <p class="card__body">
+            <code>backdrop-filter: blur()</code> を <em>限定的に</em> 使用。
+            ヘッダー ・ ガラスカード ・ ドロワー背景にのみ適用し、
+            「全面ガラス」 にしないことで近未来感と視認性を両立。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">MOTION</p>
+          <h3 class="card__title">控えめなアニメーション</h3>
+          <p class="card__body">
+            ヒーローのオーブを 18 秒周期で漂わせ、 セクションは IntersectionObserver で
+            <strong>フェード + 24px Y 軸移動</strong> のみ。
+            「動きすぎず、 しかし無反応でもない」 上品な手応えを目指しました。
+          </p>
+        </div>
+      </div>
+
+      <p class="quote">
+        <strong>なぜ黒ベースか？</strong> ：黒は単に高級感を出す色ではなく、 グラデーション ・ ガラス効果 ・ 数値などを
+        <em>最大コントラストで際立たせる土台</em> として機能します。 SaaS プロダクトの管理画面に通じる
+        「情報密度を保ったまま読ませる」 設計に欠かせない選択でした。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">II · DESIGN &amp; BUILD</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.07 — TECH STACK & ENVIRONMENT
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">07</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">05 — Tech Stack &amp; Environment</p>
+        <h2 class="head__title">技術構成 ／ <em>運用しやすいバニラ構成</em></h2>
+        <p class="head__sub">— Selected with intent —</p>
+      </header>
+
+      <p class="lead">
+        フレームワークを使わず、 HTML / CSS / JavaScript のバニラ構成を選定しました。
+        「将来 WordPress 化する前提」 と 「未経験でも保守できる範囲」 のバランスを取った技術選定です。
+      </p>
+
+      <h3 class="sub">使用技術</h3>
+      <div class="stack">
+        <span><strong>FRONT</strong>HTML5</span>
+        <span><strong>FRONT</strong>CSS3 / CSS Variables</span>
+        <span><strong>FRONT</strong>JavaScript (ES6+)</span>
+        <span><strong>FONT</strong>Google Fonts</span>
+        <span><strong>VCS</strong>Git / GitHub</span>
+        <span><strong>HOST</strong>GitHub Pages</span>
+        <span><strong>EDITOR</strong>Visual Studio Code</span>
+        <span><strong>EDITOR</strong>Dreamweaver (検証用)</span>
+        <span><strong>LOCAL</strong>XAMPP (Apache)</span>
+        <span><strong>CMS</strong>WordPress (学習 ・ テーマ化想定)</span>
+        <span><strong>DESIGN</strong>Figma (ワイヤーフレーム)</span>
+      </div>
+
+      <h3 class="sub">開発環境とワークフロー</h3>
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">ENV / 01</p>
+          <h3 class="card__title">ローカル環境確認</h3>
+          <p class="card__body">
+            <strong>XAMPP</strong> で Apache を立ち上げ、 ローカルサーバー経由で表示確認。
+            <code>file://</code> ではなく <code>http://</code> 経由で検証することで、
+            将来 WordPress を載せるときの挙動と差分が出ないようにしました。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">ENV / 02</p>
+          <h3 class="card__title">GitHub Pages 公開</h3>
+          <p class="card__body">
+            ブランチを <code>main</code> 一本に絞り、 Pages を <code>/</code> ルート公開で運用。
+            <strong>relative path で完結</strong> するように <code>./css/style.css</code> 形式に統一し、
+            移行時のパス書き換えコストを最小化しています。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">ENV / 03</p>
+          <h3 class="card__title">レスポンシブ確認</h3>
+          <p class="card__body">
+            <strong>4 ブレイクポイント</strong> (1340 / 1024 / 768 / 480) で組み、
+            DevTools のデバイスモードで主要な端末幅を確認。
+            横スクロールを抑え、 CLS を意識して調整しています。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">ENV / 04</p>
+          <h3 class="card__title">エディタ運用</h3>
+          <p class="card__body">
+            <strong>VS Code</strong> をメインに、 Prettier / Live Server / Path Intellisense を導入。
+            Dreamweaver は HTML ・ CSS の検証 ・ プレビュー用途で併用しました。
+          </p>
+        </div>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">II · DESIGN &amp; BUILD</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.08 — IMPLEMENTATION HIGHLIGHTS
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">08</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">06 — Implementation Highlights</p>
+        <h2 class="head__title">実装ポイント ／ <em>実装で意識した細部</em></h2>
+        <p class="head__sub">— Implementation Details —</p>
+      </header>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">01</p>
+          <h3 class="card__title">FLOCSS / BEM 風命名</h3>
+          <p class="card__body">
+            <code>l-</code> ／ <code>c-</code> ／ <code>p-</code> ／ <code>u-</code> プレフィックスで役割を分離。
+            <em>あとから読み返しても迷わない</em> 設計を意識して命名しています。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">02</p>
+          <h3 class="card__title">CSS 変数によるトークン管理</h3>
+          <p class="card__body">
+            配色 ・ 余白 ・ タイポを <code>:root</code> に集約。
+            「青を少し明るく」 が <em>1 行で完結</em> する状態に。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">03</p>
+          <h3 class="card__title">スクロールアニメーション</h3>
+          <p class="card__body">
+            <code>IntersectionObserver</code> で一度可視化したら監視解除。
+            CPU 負荷を抑えつつ、 自然なフェードインを実現。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">04</p>
+          <h3 class="card__title">ハンバーガーメニュー</h3>
+          <p class="card__body">
+            開閉 ／ ESC キー ／ 外側タップ ／ リンク選択で閉じる動作と
+            <code>aria-expanded</code> 同期を実装。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">05</p>
+          <h3 class="card__title">Glass UI</h3>
+          <p class="card__body">
+            <code>backdrop-filter</code> を限定使用。
+            ドロワー背景は不透明にし、 透過によるテキスト読みづらさを回避。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">06</p>
+          <h3 class="card__title">SEO ／ OGP ／ JSON-LD</h3>
+          <p class="card__body">
+            <code>title</code> / <code>description</code> 最適化、 OGP 1200×630、
+            <strong>Organization Schema</strong> を JSON-LD で配置。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">07</p>
+          <h3 class="card__title">アクセシビリティ</h3>
+          <p class="card__body">
+            セマンティック HTML、 スキップリンク、 <code>aria-label</code>、
+            フォーカスリングを丁寧に。 コントラスト比 WCAG AA 準拠。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">08</p>
+          <h3 class="card__title">prefers-reduced-motion 対応</h3>
+          <p class="card__body">
+            動き軽減を希望するユーザーに対し、 全アニメーションを停止。
+            <em>「誰でも使える」</em> ことを基本姿勢に置いています。
+          </p>
+        </div>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">II · DESIGN &amp; BUILD</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.09 — WEB MARKETING PERSPECTIVE
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">09</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">07 — Web Marketing Perspective</p>
+        <h2 class="head__title">Web マーケティング視点 ／ <em>成果を出す前提の設計</em></h2>
+        <p class="head__sub">— Designed for conversion, not decoration —</p>
+      </header>
+
+      <p class="lead">
+        「見栄えが良い」 だけでは採用 LP として成立しません。
+        <em>応募ボタン CTR · フォーム到達率 · モバイル離脱率</em> の各指標を改善する前提で設計し、
+        公開後の計測 ・ 改善サイクルまで想定しています。
+      </p>
+
+      <h3 class="sub">KPI 設計 ／ <strong>公開後 3 ヶ月の仮目標</strong></h3>
+      <div class="kpi-row">
+        <div class="kpi">
+          <div class="kpi__num">15<small>%+</small></div>
+          <p class="kpi__name">応募ボタン CTR</p>
+          <p class="kpi__desc">ヒーロー直下の主 CTA 押下率</p>
+        </div>
+        <div class="kpi">
+          <div class="kpi__num">8<small>%+</small></div>
+          <p class="kpi__name">フォーム到達率</p>
+          <p class="kpi__desc">Contact セクションへの到達</p>
+        </div>
+        <div class="kpi">
+          <div class="kpi__num">35<small>%+</small></div>
+          <p class="kpi__name">FAQ 閲覧率</p>
+          <p class="kpi__desc">アコーディオン展開率</p>
+        </div>
+        <div class="kpi">
+          <div class="kpi__num">50<small>%-</small></div>
+          <p class="kpi__name">モバイル離脱率</p>
+          <p class="kpi__desc">ヒーローのみで離脱</p>
+        </div>
+      </div>
+
+      <h3 class="sub">公開後の計測 ・ 改善想定</h3>
+      <div class="row-list">
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>Google Analytics 4 導入想定</h4>
+            <p>セッション ・ 直帰 ・ コンバージョン経路を計測。 主要イベントを <code>gtag</code> で送信し、 GA4 上でファネル可視化することを想定しています。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>ヒートマップ分析 (Microsoft Clarity 等)</h4>
+            <p>クリック ・ スクロール ・ ラージクリック (連打) を観測し、 <em>「読まれていない箇所」</em> を可視化。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>A/B テストでの継続改善</h4>
+            <p>主 CTA のコピー ・ 配色 ・ 配置を仮説ベースで A/B テスト。 数値根拠で次の改善を決める運用を想定。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">◆</span>
+          <div>
+            <h4>離脱防止の構造的工夫</h4>
+            <p>FAQ ・ Interview を Recruit の直前に配置し、 <em>「決断の手前で不安を取り除く」</em> 順序を設計。</p>
+          </div>
+        </div>
+      </div>
+
+      <p class="quote">
+        数値はあくまで <strong>仮説目標値</strong> です。 公開後の実数値に応じて、 コピー ・ 配色 ・ 配置を継続改善することを前提に設計しています。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">III · RESULT</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.10 — WORDPRESS MIGRATION PLAN
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">10</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">08 — WordPress Migration Plan</p>
+        <h2 class="head__title">WordPress 化想定 ／ <em>運用に強い構造</em></h2>
+        <p class="head__sub">— Designed for the future CMS migration —</p>
+      </header>
+
+      <p class="lead">
+        現状は静的 HTML ですが、 <em>将来 WordPress テーマ化する前提</em> で構造を組んでいます。
+        「公開して終わり」 ではなく、 採用情報を <strong>非エンジニアでも更新できる</strong> 状態に持っていくのがゴールです。
+      </p>
+
+      <h3 class="sub">テーマ化のための構造設計</h3>
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">WP / 01</p>
+          <h3 class="card__title">header / footer の分離</h3>
+          <p class="card__body">
+            グローバルヘッダーとフッターを独立した <code>&lt;header&gt;</code> ／ <code>&lt;footer&gt;</code> として配置。
+            将来 <code>header.php</code> ／ <code>footer.php</code> に切り出すだけで完結します。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">WP / 02</p>
+          <h3 class="card__title">セクション単位の独立性</h3>
+          <p class="card__body">
+            各 <code>&lt;section&gt;</code> を完全に独立した構造に。 ブロックパターン ／ 再利用ブロックとしての
+            切り出しが容易な設計にしています。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">WP / 03</p>
+          <h3 class="card__title">募集要項のカスタム投稿化</h3>
+          <p class="card__body">
+            募集職種は <code>&lt;details&gt;</code> 要素で 1 件ずつ独立。
+            カスタム投稿タイプ <code>job</code> として管理画面から追加 ・ 修正できる形に移行可能です。
+          </p>
+        </div>
+        <div class="card">
+          <p class="card__num">WP / 04</p>
+          <h3 class="card__title">CSS / JS は theme 配下に</h3>
+          <p class="card__body">
+            <code>wp_enqueue_style</code> ／ <code>wp_enqueue_scripts</code> で読み込む前提のパス設計。
+            <code>get_template_directory_uri()</code> への置換が <em>最小限</em> で済みます。
+          </p>
+        </div>
+      </div>
+
+      <h3 class="sub">保守性 ・ 運用性への配慮</h3>
+      <p class="quote">
+        <strong>テキストと構造を完全分離</strong> ：募集要項の追加 ／ 修正は HTML のテキストノードを差し替えるだけ。
+        デザインを崩さずに採用情報をアップデートできる構造にしています。
+        <strong>CSS 変数で配色 ・ 余白 ・ タイポを一元管理</strong> しているため、 ブランドリニューアル時にも
+        <em>1 ファイルの調整で対応</em> できます。
+      </p>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">III · RESULT</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.11 — CHALLENGES
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">11</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">09 — Challenges</p>
+        <h2 class="head__title">苦労した点 ／ <em>つまずきから学んだこと</em></h2>
+        <p class="head__sub">— What I struggled with, and how I got through —</p>
+      </header>
+
+      <p class="lead">
+        未経験での制作だったため、 一つひとつの工程で 「ここで詰まった」 という壁がありました。
+        以下は <em>実際にぶつかった課題</em> と、 その解決過程の記録です。
+      </p>
+
+      <div class="row-list">
+        <div class="row">
+          <span class="row__mark">▲</span>
+          <div>
+            <h4>GitHub Pages での公開設定</h4>
+            <p>最初は 404 エラーで表示されず、 設定 → Pages → branch の関係性を理解するまで時間が掛かりました。
+            ローカル <code>http://</code> と Pages の URL 構造の違いを <em>実機で確認しながら覚える</em> ことで、 次から迷わなくなりました。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">▲</span>
+          <div>
+            <h4>relative path の管理</h4>
+            <p><code>./css/style.css</code> と <code>/css/style.css</code> の挙動の違いで、 GitHub Pages 公開時に CSS が読まれない事象が発生。
+            「サブディレクトリ公開」 を前提に <em>常に <code>./</code> 形式で書く</em> ルールに統一しました。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">▲</span>
+          <div>
+            <h4>レスポンシブ対応</h4>
+            <p>「PC 縮小」 ではなく 「モバイル再設計」 という発想に切り替えるまで苦労しました。
+            タッチ領域 ・ 親指リーチ ・ ハンバーガー UI など、 <em>スマホ固有の文脈</em> をひとつずつ学びながら組み直しました。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">▲</span>
+          <div>
+            <h4>CSS 設計と可読性</h4>
+            <p>最初はセレクタが深くなりすぎて、 自分でも何のスタイルか分からなくなる場面が頻発。
+            FLOCSS の <code>l-</code> ／ <code>c-</code> ／ <code>p-</code> ／ <code>u-</code> プレフィックスを導入してから、
+            <em>1 週間ぶりに開いたファイルでも全体把握できる</em> 状態になりました。</p>
+          </div>
+        </div>
+        <div class="row">
+          <span class="row__mark">▲</span>
+          <div>
+            <h4>ガラス UI の調整</h4>
+            <p><code>backdrop-filter</code> がスタッキングコンテキストを変えるため、 ドロワー背景に重ねるとテキストが暗くなる現象に遭遇。
+            実機ピクセル値を確認しながら、 <em>透過の重なり順</em> を整理してようやく解決できました。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">IV · REFLECTION</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.12 — LEARNINGS
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">12</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">10 — Learnings</p>
+        <h2 class="head__title">学んだこと ／ <em>次の案件に活かしたい視点</em></h2>
+        <p class="head__sub">— Takeaways I'll bring to the next project —</p>
+      </header>
+
+      <p class="lead">
+        本案件を通して、 「ただ作る」 から <em>「考えて作る」</em> への意識の切り替えが起きました。
+        以下は実装が終わったあとに自分の中に残った、 5 つの学びです。
+      </p>
+
+      <div class="grid-2">
+        <div class="card">
+          <p class="card__num">LEARN / 01</p>
+          <h3 class="card__title">UI / UX は 「やさしさ」 の設計</h3>
+          <p class="card__body">
+            「迷わせない」 「無理させない」 「思い出しやすい」 を起点に組むと、 デザインそのものの判断軸が安定する。
+            <em>機能ではなく態度</em> として UI を考えるようになりました。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">LEARN / 02</p>
+          <h3 class="card__title">保守性は 「未来の自分」 への手紙</h3>
+          <p class="card__body">
+            CSS 変数 ・ FLOCSS ・ コメント整理は <em>過剰に見えても、 1 週間後の自分が救われる</em>。
+            「読めば分かる」 ではなく 「読まなくても分かる」 を目指すようになりました。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">LEARN / 03</p>
+          <h3 class="card__title">Git / GitHub は 「実験する勇気」</h3>
+          <p class="card__body">
+            ブランチを切る習慣がついてから、 「壊してもいい場所」 を持てるようになった。
+            <em>気軽に試せる</em> ことが、 結果的にコードの質を上げる近道でした。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">LEARN / 04</p>
+          <h3 class="card__title">WordPress 視点で組むと迷わない</h3>
+          <p class="card__body">
+            「将来テーマ化する」 を前提にすると、 セクション分割 ・ 命名規則 ・ パス設計の判断が <em>自然に揃う</em>。
+            静的 HTML から書き始めても、 設計思想を CMS から借りるのは有効でした。
+          </p>
+        </div>
+
+        <div class="card">
+          <p class="card__num">LEARN / 05</p>
+          <h3 class="card__title">実務を意識した設計の重要性</h3>
+          <p class="card__body">
+            「ポートフォリオ用」 ではなく 「明日からの案件で使えるか」 を基準に置くと、
+            <em>細部の判断が変わる</em>。 SEO・OGP・アクセシビリティを最初から組み込むようになりました。
+          </p>
+        </div>
+
+        <div class="card card--soft">
+          <p class="card__num">CLOSING THOUGHT</p>
+          <h3 class="card__title">「未経験」 だから丁寧に</h3>
+          <p class="card__body">
+            技術的な熟練度では現場メンバーに敵わない自覚があるからこそ、 <em>「丁寧さ」 と 「意図の言語化」</em> で
+            価値を出せるよう意識しました。 入社後もこの姿勢を、 そのまま現場に持ち込みたいと考えています。
+          </p>
+        </div>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">IV · REFLECTION</span>
+  </section>
+
+
+  <!-- ============================================================
+       P.13 — PUBLIC RESOURCES & CLOSING
+       ============================================================ -->
+  <section class="page">
+    <span class="page__no">13</span>
+    <div class="page__body">
+      <header class="head">
+        <p class="head__label">11 — Public Resources</p>
+        <h2 class="head__title">公開リソース ／ <em>実物をご確認いただけます</em></h2>
+        <p class="head__sub">— Live site &amp; source code —</p>
+      </header>
+
+      <p class="lead">
+        本企画書で説明したサイトは、 <em>実装まで進めて公開済み</em> です。
+        以下の URL ／ QR コードからご確認いただけます。 ソースコードは GitHub で公開しています。
+      </p>
+
+      <div class="resources">
+        <div>
+          <div class="qr-frame">
+            <img src="./assets/images/qr.jpg" alt="公開サイトへの QR コード">
+          </div>
+          <p class="qr-caption">— Scan to visit —</p>
+          <p class="qr-note">スマートフォンから<br>サイトをご確認いただけます</p>
+        </div>
+
+        <div>
+          <div class="resource-card">
+            <p class="resource-card__label"><span class="resource-card__num">01</span>LIVE SITE</p>
+            <h3 class="resource-card__title">公開サイト</h3>
+            <div class="resource-card__url">https://hirotonozaki.github.io/nova-tech-careers/</div>
+            <p class="resource-card__desc">
+              本企画書の設計をそのまま実装したサイトです。 PC ／ スマートフォン両対応で、 全機能が動作する状態で公開しています。
+            </p>
+          </div>
+
+          <div class="resource-card">
+            <p class="resource-card__label"><span class="resource-card__num">02</span>GITHUB REPOSITORY</p>
+            <h3 class="resource-card__title">ソースコード</h3>
+            <div class="resource-card__url">https://github.com/hirotonozaki/nova-tech-careers</div>
+            <p class="resource-card__desc">
+              GitHub 上でソースコードを公開しています。 HTML ／ CSS ／ JavaScript の実装方針、 フォルダ構成、
+              コメント記述まで確認可能です。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="closing">
+        <div class="closing__line"></div>
+        <h3 class="closing__title">
+          <em>「考えながら作る」</em> を、 これからも。
+        </h3>
+        <p class="closing__text">
+          本企画書の最後までお目通しいただき、 ありがとうございました。 現場の中で、 こうした
+          「考えながら作る」 姿勢を磨き続けられることを楽しみにしています。
+        </p>
+      </div>
+    </div>
+    <span class="page__brand">NOVA TECH CAREERS · PROPOSAL</span>
+    <span class="page__chapter">— END OF DOCUMENT —</span>
+  </section>
+
+</body>
+</html>
