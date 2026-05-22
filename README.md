@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/28134915/README.md)
+[README.md](https://github.com/user-attachments/files/28135089/README.md)
 <div align="center">
 
 # NOVA TECH CAREERS — Proposal
@@ -134,6 +134,20 @@ nova-tech-careers-proposal/
 ## 🖼 Screenshot ／ スクリーンショット
 
 ![NOVA TECH CAREERS Proposal Preview](./assets/images/preview-mockup.webp)
+
+<br />
+
+## 📱 Quick Access ／ QR コードから採用 LP へ
+
+スマートフォンで以下の QR コードを読み取ると、採用 LP 本体（公開サイト）に直接アクセスできます。
+
+<div align="center">
+
+<img src="./assets/images/qr.png" alt="採用 LP 本体への QR コード" width="200">
+
+🔗 https://hirotonozaki.github.io/nova-tech-careers/
+
+</div>
 
 <br />
 
